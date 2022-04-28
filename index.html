@@ -4,8 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1f2f811d1e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="/src/style.css" />
-    <title>Document</title>
+    <title>University Website Design</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header section-->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="/src/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+          Quae natus dolore itaque possimus facere veniam, mollitia sed commodi
+          tempora harum molestias ullam dolorem ex nostrum ipsam blanditiis
+          porro autem ipsum?
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+    <!--Toggle Menu JavaScript-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
 </html>
