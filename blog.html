@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1f2f811d1e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Blog & Newsletter</title>
+  </head>
+  <body>
+    <!-- Header section-->
+    <section class="blog-header">
+      <nav>
+        <a href="index.html"><img src="/src/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="about.html" target="_blank">ABOUT</a>
+            </li>
+            <li><a href="course.html" target="_blank">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Certificate & Online Programs for 2022</h1>
+    </section>
+    <!-- Blog content -->
+
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="/src/certificate.jpg" alt="Certifications" />
+          <h2>Our Certificate</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem modi
+            voluptatum atque eligendi impedit nemo quidem numquam corporis quod
+            inventore officia sed, ratione ab, dignissimos voluptatem blanditiis
+            repudiandae dolor sint. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Necessitatibus provident iure id, dignissimos iste
+            illum sit dolore debitis labore voluptatum, magni, molestias nihil
+            voluptatibus fuga earum repellat impedit accusantium vel.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+            nostrum nihil aperiam mollitia odio tempora delectus illum facere
+            eaque sapiente nobis in, dicta nemo id sit. Inventore optio maiores
+            dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+            unde tempore provident aliquid illum molestias, reprehenderit magni
+            architecto, harum, minus optio ut. At quae maxime temporibus
+            dignissimos animi error est! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Veniam sint omnis quam minus alias iusto numquam
+            quia molestias. Minima possimus odit fugiat cumque provident non
+            error deserunt. Voluptatibus, nesciunt nihil. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Fugiat, maxime impedit deserunt
+            ea ab animi numquam recusandae magni quasi libero qui nostrum,
+            nesciunt rem perferendis, doloremque nulla vero? Quo, voluptas!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            consequuntur blanditiis eius enim velit possimus commodi inventore
+            beatae harum temporibus officiis quam ea, veritatis molestias
+            numquam eveniet eum at alias?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            consequuntur blanditiis eius enim velit possimus commodi inventore
+            beatae harum temporibus officiis quam ea, veritatis molestias
+            numquam eveniet eum at alias?
+          </p>
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Enter Email" />
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                POST COMMENT
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>Post Categories</h3>
+          <div>
+            <span>Business Analytics</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Droit</span>
+            <span>34</span>
+          </div>
+          <div>
+            <span>Software Engineer</span>
+            <span>58</span>
+          </div>
+          <div>
+            <span>Marketing & Communication</span>
+            <span>11</span>
+          </div>
+          <div>
+            <span>Journalism</span>
+            <span>30</span>
+          </div>
+          <div>
+            <span>Psychologist</span>
+            <span>15</span>
+          </div>
+          <div>
+            <span>Biology Engineer</span>
+            <span>18</span>
+          </div>
+          <div>
+            <span>Medicine</span>
+            <span>58</span>
+          </div>
+          <div>
+            <span>Chemical Engineer</span>
+            <span>12</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit sed
+        non dolor optio voluptatem molestias natus nesciunt. <br />
+        Iure dignissimos atque eaque nam voluptates laboriosam perferendis
+        soluta quis modi aliquid!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>Developed by <a href="#" class="dev-link">Julia Planchon</a></p>
+    </section>
+
+    <!--Toggle Menu JavaScript-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
