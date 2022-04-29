@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1f2f811d1e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- Header section-->
+    <section class="about-us-header">
+      <nav>
+        <a href="index.html"><img src="/src/logo.png" alt="Logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a
+                href="about.html"
+                target="_blank
+              "
+                >ABOUT</a
+              >
+            </li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+    <!-- About Us Content -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-us-col">
+          <h1>We are the world's largest university</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            nisi laborum, ducimus voluptatem veritatis similique minima dolorum.
+            Sed quidem suscipit, magnam quo consectetur ea accusamus voluptate
+            commodi. Debitis, exercitationem consequatur.Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Architecto nisi laborum, ducimus
+            voluptatem veritatis similique minima dolorum. Sed quidem suscipit,
+            magnam quo consectetur ea accusamus voluptate commodi. Debitis,
+            exercitationem consequatur.
+          </p>
+          <a href="#" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-us-col">
+          <img src="/src/about.jpg" alt="About us" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad suscipit sed
+        non dolor optio voluptatem molestias natus nesciunt. <br />
+        Iure dignissimos atque eaque nam voluptates laboriosam perferendis
+        soluta quis modi aliquid!
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </div>
+      <p>Developed by <a href="#" class="dev-link">Julia Planchon</a></p>
+    </section>
+
+    <!--Toggle Menu JavaScript-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
